@@ -1,0 +1,172 @@
+
+
+/* プレミアリーグ */
+.premier {
+  margin-bottom: 50px;
+}
+
+.PL {
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto 10px;
+}
+
+.premierTeamRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #59a2f1;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.premierScorersRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #f9b859;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* スペインリーグ */
+.laliga {
+  margin-bottom: 50px;
+}
+
+.PD {
+  display: block;
+  width: 250px;
+  height: 200px;
+  margin: 0 auto 10px;
+}
+
+.laligaTeamRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #59a2f1;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.laligaScorersRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #f9b859;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* イタリアリーグ */
+.seriea {
+  margin-bottom: 50px;
+}
+
+.SA {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+}
+
+.serieaTeamRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #59a2f1;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.serieaScorersRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #f9b859;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* ドイツリーグ */
+.bundes {
+  margin-bottom: 50px;
+}
+
+.BL {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+}
+
+.bundesTeamRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #59a2f1;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.bundesScorersRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #f9b859;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* フランスリーグ */
+.ligue1 {
+  margin-bottom: 50px;
+}
+
+.FL {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+}
+
+.ligue1TeamRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #59a2f1;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ligue1ScorersRank {
+  padding: 5px 10px;
+  width: 200px;
+  margin: 0 auto;
+  background: #f9b859;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="../../css/scorersRank.css">
+  <title>API</title>
+</head>
+<body>
+  <div class="back">BACK</div>
+
+
+  <table>
+  <thead>
+  <tr>
+  <th>順位</th>
+  <th>選手名</th>
+  <th>得点数</th>
+  </tr>
+  </thead>
+  <tbody id="scorers-tbl">
+
+  </tbody>
+  </table> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    $('.back').on('click', function() {
+      location.href = '../../index.html';
+    });
+
+
+    $(function() {
+      $.ajaxSetup({
+        headers : {"X-Auth-Token" : " ここにAPIキー "}
+      });
+
+      $.getJSON("https://api.football-data.org/v2/competitions/FL1/scorers", function(data_score) {
+        //JSON取得後の処理
+        score_list = data_score.scorers;
+        score_count = data_score.count;
+        console.log(score_list[0].numberOfGoals);
+        console.log(data_score.filters.limit);
+        console.log(score_list[0].team.id);
+        
+
+
+        for (let i = 0; i < score_count; i++) {
+          //得点データを挿入
+          $("#scorers-tbl").append(
+          '<tr>'
+          + '<td style = "text-align: center">' + `${i + 1}` + '</td>'
+          + '<td>' + '<div style="display: table-cell; vertical-align: middle;"><img src="https://crests.football-data.org/' + score_list[i].team.id + '.svg" height="30"></div><div style="display: table-cell; vertical-align: middle;">'
+          + score_list[i].player.name 
+          + '</div></td>'
+          + '<td style = "text-align: center">' + score_list[i].numberOfGoals + '</td>'
+          + '</tr>'
+          );
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>API</title>
+</head>
+<body>
+  <div class="topPage">
+    <div class="premier">
+      <img src="img/premierleague.jpg" class="PL">
+      <div class="premierTeamRank">順位表</div>
+      <div class="premierScorersRank">得点ランキング</div>
+    </div>
+    <div class="laliga">
+      <img src="img/laliga.png" class="PD">
+      <div class="laligaTeamRank">順位表</div>
+      <div class="laligaScorersRank">得点ランキング</div>
+    </div>
+    <div class="seriea">
+      <img src="img/seriea.jpeg" class="SA">
+      <div class="serieaTeamRank">順位表</div>
+      <div class="serieaScorersRank">得点ランキング</div>
+    </div>
+    <div class="bundes">
+      <img src="img/bundesliga.jpg" class="BL">
+      <div class="bundesTeamRank">順位表</div>
+      <div class="bundesScorersRank">得点ランキング</div>
+    </div>
+    <div class="ligue1">
+      <img src="img/ligue1.png" class="FL">
+      <div class="ligue1TeamRank">順位表</div>
+      <div class="ligue1ScorersRank">得点ランキング</div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    // プレミアリーグへ
+    $('.premierTeamRank').on('click', function() {
+      location.href = 'html/teamRank/premierleague.html';
+    });
+    $('.premierScorersRank').on('click', function() {
+      location.href = 'html/scorersRank/premierleagueScorers.html';
+    });
+
+    // スペインリーグへ
+    $('.laligaTeamRank').on('click', function() {
+      location.href = 'html/teamRank/laliga.html';
+    });
+    $('.laligaScorersRank').on('click', function() {
+      location.href = 'html/scorersRank/laligaScorers.html';
+    });
+
+    // イタリアリーグへ
+    $('.serieaTeamRank').on('click', function() {
+      location.href = 'html/teamRank/seriea.html';
+    });
+    $('.serieaScorersRank').on('click', function() {
+      location.href = 'html/scorersRank/serieaScorers.html';
+    });
+
+    // ドイツリーグへ
+    $('.bundesTeamRank').on('click', function() {
+      location.href = 'html/teamRank/bundesliga.html';
+    });
+    $('.bundesScorersRank').on('click', function() {
+      location.href = 'html/scorersRank/bundesligaScorers.html';
+    });
+
+    // フランスリーグへ
+    $('.ligue1TeamRank').on('click', function() {
+      location.href = 'html/teamRank/ligue1.html';
+    });
+    $('.ligue1ScorersRank').on('click', function() {
+      location.href = 'html/scorersRank/ligue1Scorers.html';
+    });
+  </script>
+</body>
+</html>

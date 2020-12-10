@@ -1,0 +1,14 @@
+/* 戻るボタン */
+.back {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #aaa;
+  cursor: pointer;
+}
+
+/* テーブル */
+table {
+  width: 500px;
+  margin: 0 auto;
+}
