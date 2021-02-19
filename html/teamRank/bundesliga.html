@@ -35,7 +35,7 @@
   $(function() {
     //ajax実行時にデフォルト値をを設定する、ajaxに関連するメソッドで共通して利用できる
     $.ajaxSetup({
-      headers : {"X-Auth-Token" : " ここにAPIキー "}
+      headers : {"X-Auth-Token" : "d706ad471de941e2a6b3dbce23feed35"}
     });
     $.getJSON('https://api.football-data.org/v2/competitions/BL1/standings?standingType=TOTAL', function(data_BL1) {
       //JSON取得後の処理

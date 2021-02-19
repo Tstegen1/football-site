@@ -5,10 +5,22 @@
   border-radius: 2px;
   background: #aaa;
   cursor: pointer;
+  color: #fff;
 }
 
 /* テーブル */
 table {
   width: 500px;
   margin: 0 auto;
+  border-collapse: collapse;
+}
+
+thead > tr {
+  background: #34c0ff;
+  border: 1px #34c0ff solid;
+}
+
+td {
+  border: 1px black solid;
+  border-top: none;
 }
